@@ -64,7 +64,7 @@ def extract_temporal_features(graphs_by_book):
             all_data.append({
                 "node": node,
                 "book": book,
-                "degree": features["degree"].get(node, 0),
+                  
                 "betweenness": features["betweenness"].get(node, 0),
                 "pagerank": features["pagerank"].get(node, 0),
             })

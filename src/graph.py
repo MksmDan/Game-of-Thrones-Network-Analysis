@@ -34,6 +34,5 @@ def basic_stats(G):
 
 
 def build_cumulative_graph(df, max_book, min_weight=1):
-    
     df_cutoff = df[df["book"] <= max_book]
     return build_graph(df_cutoff, min_weight=min_weight)
