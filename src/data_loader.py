@@ -57,6 +57,7 @@ def load_edges(filename: str = "book1.csv") -> pd.DataFrame:
     df = pd.read_csv(data_path)
     df = validate_edges(df)
 
+
     return df
 
 def load_node_labels(filename: str = "nodes.csv"):

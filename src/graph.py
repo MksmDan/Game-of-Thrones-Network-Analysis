@@ -2,6 +2,23 @@ import networkx as nx
 
 
 def build_graph(df, min_weight=1):
+    """
+    Строит неориентированный граф взаимодействий персонажей.
+
+    Parameters
+    ----------
+    df : pd.DataFrame
+        Таблица взаимодействий персонажей.
+        Ожидаются столбцы:
+        - Source
+        - Target
+        - weight
+
+    Returns
+    -------
+    networkx.Graph
+        Граф персонажей с весами рёбер.
+    """
     G = nx.Graph()
 
     for _, row in df.iterrows():
