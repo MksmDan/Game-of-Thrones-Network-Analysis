@@ -367,7 +367,7 @@ flowchart TD
 ## Feature Importance
 
 <p align="center">
-<img src="reports/figures/feature_importance.png" width="700">
+<img src="reports/figures/rf_feature_importance.png" width="700">
 </p>
 
 Важность признаков итоговой модели Random Forest.
